@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f1ed;
+  min-height: 100vh;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+select {
+  -webkit-appearance: auto;
+  appearance: auto;
+}

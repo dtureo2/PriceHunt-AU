@@ -1,0 +1,19 @@
+[Unit]
+Description=PriceHunt AU — Baby Price Comparison
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/opt/pricehunt-au
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=HOSTNAME=0.0.0.0
+ExecStart=/usr/bin/node /opt/pricehunt-au/server.js
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
