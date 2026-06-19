@@ -154,4 +154,4 @@ Allowed remote image hosts are configured in `next.config.ts`
 
 ## License
 
-Private project — not licensed for redistribution.
+Licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE) for the full text.
